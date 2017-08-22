@@ -27,7 +27,7 @@ function getCars($km) {
     $dsn = 'mysql:dbname=fuhrparkdb;host=frillingsql01.database.windows.net';
     $user = 'afrilling';
     $password = 'unigoe12!';
-	$conn = new PDO($dsn, $user, $password);
+	$conn = new mysqli ($dsn, $user, $password);
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
 	}
