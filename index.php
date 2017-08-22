@@ -24,8 +24,6 @@
 				<button class="btn right" onclick="getAutos();">Abschicken</button>
 			</div>
 		</div>
-		<div id="tab2" class="col s12"><h4>Page 2</h4></div>
-		<div id="tab3" class="col s12"><h4>Page 3</h4></div>
 
 	</div>
 
