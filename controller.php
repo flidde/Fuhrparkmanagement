@@ -23,7 +23,7 @@ if (isset($_GET["km"])) {
 }
 
 function getCars($km) {
-    $conn = new mysqli("localhost", "root", "unigoe12!", "fuhrparkdb");
+    $conn = new mysqli("localhost", "root", "", "fuhrparkdb");
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
