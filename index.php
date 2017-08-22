@@ -13,11 +13,6 @@
 </head>
 <body>
 	<div class="container">
-		<ul class="tabs">
-			<li class="tab col s3"><a href="#tab1">Page 1</a></li>
-			<li class="tab col s3"><a href="#tab2">Page 2</a></li>
-			<li class="tab col s3"><a href="#tab3">Page 3</a></li>
-		</ul>
 		<div id="tab1" class="col s12">
 			<h2>Fuhrparkmanagement</h2>
 			<p>Bitte geben Sie den Abfahrtsort und den Zielort Ihrer Reise ein.</p>
