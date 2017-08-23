@@ -2,50 +2,52 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Fuhrparkmanagement</title>
+	<title>Fuhrpark</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" type="text/css" href="thirdparty/materialize/css/materialize.css">
 	<script type="text/javascript" src="thirdparty/jquery/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="indexController.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/jquery/jquery.mobile-1.4.5.css" />
+    <link rel="stylesheet" href="/vendor/waves/waves.min.css" />
+    <link rel="stylesheet" href="/vendor/wow/animate.css" />
+    <link rel="stylesheet" href="/css/nativedroid2.css" />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 </head>
 <body>
-<nav>
-    <div class="nav-wrapper">
-        <a href="index.php" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="Fuhrpark.html">Fuhrpark</a></li>
-        </ul>
+
+<div data-role="page">
+
+    <nd2-include data-src="/fragments/panel.left.html"></nd2-include>
+
+    <div data-role="header" data-position="fixed">
+        <a href="#leftpanel" class="ui-btn ui-btn-left"><i class="zmdi zmdi-menu"></i></a>
+        <h1>Hausarbeitsseminar</h1>
     </div>
-</nav>
-	<div class="container">
-		<h2>Fuhrparkmanagement</h2>
-		<p>Bitte geben Sie den Abfahrtsort und den Zielort Ihrer Reise ein.</p>
-		<div class="input-field">
-			<form action="/evaluation.view.php">
-				<input id="km" type="number" name="km" required>
-				<label for="km">Anzahl km</label>
-				<input class="btn" type="submit" value="Abschicken">
-			</form>
-		</div>
-	</div>
 
+    <div role="main" class="ui-content" data-inset="false">
+        <h3>Willkommen auf der Fuhrparkmanagement Software</h3>
+        <p>Diese Software soll die Öklogoische bla bla </p>
+        </div>
 
-	<script type="text/javascript" src="thirdparty/materialize/js/materialize.js"></script>
+</div>
 
-	<script>
-		$(document).ready(function() {
-			Materialize.updateTextFields();
-		});
-		/*document.getElementById("km").onkeydown = function(event) {
-			if (event.keyCode == 13) {
-				getAutos();
-			}
-		}*/
+<script src="/jquery/jquery-2.2.4.js"></script>
+<script src="/jquery/jquery.ui-1.12.1.js"></script>
+<script src="/jquery/jquery.mobile-1.4.5.js"></script>
+<script src="/vendor/waves/waves.min.js"></script>
+<script src="/vendor/wow/wow.min.js"></script>
+<script src="/js/nativedroid2.js"></script>
+<script src="/nd2settings.js"></script>
 
-
-	</script>
 </body>
 </html>

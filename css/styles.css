@@ -1,0 +1,175 @@
+.ui-listview {
+    margin: 16px 0 !important;
+}
+
+#infobox {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#singleChoice {
+    text-align: center;
+}
+
+#points {
+    text-align: right;
+    display: block;
+}
+
+video {
+    width: 100%;
+    max-height: 20rem;
+}
+
+.ct-chart-line, .ct-chart-points {
+    width: 100%;
+}
+
+.nd2Tabs li, .nd2Tabs .nd2Tabs-active, .nd2Tabs-active li, .nd2Tabs li:hover{
+    color: black;
+}
+
+#orderContainer {
+    width: 100%;
+    text-align: center;
+}
+
+#orderContainer > a {
+    display: inline-block;
+    margin: 4px;
+    padding: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    color: white;
+    background: lightgrey;
+}
+#orderContainer > a.active {
+    background: #213e5c;
+}
+
+#orderContainer > a:hover {
+    cursor: pointer;
+    background: #213e5c;
+    box-shadow: 1px 1px 1px rgba(33, 62, 92, 0.5);
+}
+#orderContainer > a.active:hover {
+    cursor: default;
+}
+
+#sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+#sortable > li {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #213e5c;
+}
+
+#sortable > li:hover {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #213e5c;
+    border: 1px solid #213e5c;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+#draggableContainer {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #213e5c;
+}
+#dragToContainer {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #213e5c;
+}
+
+.draggable {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #213e5c;
+}
+
+.nd2-card {
+    max-width: none;
+}
+
+.nd2-card .card-title .card-primary-title {
+    white-space: normal;
+}
+
+hr {
+    margin: 0 !important;
+    border-color: #213e5c;
+}
+
+.list-item {
+    display: block !important;
+    position: relative !important;
+    overflow: visible !important;
+    border-radius: 5px;
+    padding: 10px !important;
+    margin: 10px !important;
+    text-align: center;
+}
+
+.list-item:hover {
+    background: lightgrey !important;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+}
+
+.nd2-sidepanel-profile:after {
+    background: #213e5c;
+}
+
+.nd2-sidepanel-profile .profile-thumbnail {
+    border-radius: 20%;
+}
+
+.nd2-card {
+    box-shadow: 0 2px 2px 0 rgba(33, 62, 92, 0.16), 0 2px 10px 0 rgba(33, 62, 92, 0.12);
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+table tr:nth-child(even) {
+    background-color: #CCCCCC
+}
+
+th, td {
+    text-align: center;
+}
+
+.card-subtitle {
+    color: black !important;
+}
+
+.points {
+    margin: 5px;
+}
+
