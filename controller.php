@@ -4,22 +4,13 @@ include "Car.php";
 
 if (isset($_GET["km"])) {
     $km = htmlspecialchars($_GET["km"]);
-    //TODO: datenbank connection
-    /*
-     * DB:
-     * name|type|kmMin|kmMax|info
-     * name: bmw i3
-     * type: elektro
-     * kmMin: 0
-     * kmMax: 50
-     * info: nettes auto
-     */
-
+    if ($km < 0) {
+    	return -1;//ERROR: negative Zahl
+	}
     $cars = getCars($km);
-    //include "evaluation.view.php";
 
 } else {
-    echo "Bitte ordentliche Zahl eingeben";
+    return -2;//ERROR: $km not set
 }
 
 function getCars($km) {

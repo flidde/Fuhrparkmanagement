@@ -13,18 +13,15 @@
 </head>
 <body>
 	<div class="container">
-		<div id="tab1" class="col s12">
-			<h2>Fuhrparkmanagement</h2>
-			<p>Bitte geben Sie den Abfahrtsort und den Zielort Ihrer Reise ein.</p>
-			<div class="input-field">
-				<form>
-					<input id="km" type="number" name="km" required>
-					<label for="km">Anzahl km</label>
-				</form>
-				<button class="btn right" onclick="getAutos();">Abschicken</button>
-			</div>
+		<h2>Fuhrparkmanagement</h2>
+		<p>Bitte geben Sie den Abfahrtsort und den Zielort Ihrer Reise ein.</p>
+		<div class="input-field">
+			<form action="/evaluation.view.php">
+				<input id="km" type="number" name="km" required>
+				<label for="km">Anzahl km</label>
+				<input class="btn" type="submit" value="Abschicken">
+			</form>
 		</div>
-
 	</div>
 
 
@@ -34,6 +31,11 @@
 		$(document).ready(function() {
 			Materialize.updateTextFields();
 		});
+		/*document.getElementById("km").onkeydown = function(event) {
+			if (event.keyCode == 13) {
+				getAutos();
+			}
+		}*/
 
 
 	</script>
