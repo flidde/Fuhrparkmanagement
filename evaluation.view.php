@@ -6,9 +6,14 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" type="text/css" href="thirdparty/materialize/css/materialize.css">
+	<?php
+	require_once "fragments/head.html";
+	?>
 </head>
 <body>
+	<?php
+	require_once "fragments/navbar.html";
+	?>
 	<div class="container">
 		<h4>Folgende Autos eignen sich:</h4>
 		<br/>
@@ -38,7 +43,7 @@
 								</div>
 							</div>
 						</div>";
-			$view = str_replace("var_img", $car->img, $view);
+			$view = str_replace("var_img", $car->img, $view);//TODO: str_replace (array, array) benutzen!;
 			$view = str_replace("var_name", $car->name, $view);
 			$view = str_replace("var_type", $car->type, $view);
 			$view = str_replace("var_info", $car->info, $view);
@@ -48,5 +53,8 @@
 		}
 		?>
 	</div>
+	<?php
+	require_once "fragments/footer.html";
+	?>
 </body>
 </html>
