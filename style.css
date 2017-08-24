@@ -1,3 +1,7 @@
 #logo-img {
 	height: 64px;
 }
+
+h3, h5 {
+	word-break: break-all;
+}

@@ -20,8 +20,8 @@
 		<p>Bitte geben Sie den Abfahrtsort und den Zielort Ihrer Reise ein.</p>
 		<div class="input-field">
 			<form action="/evaluation.view.php">
-				<input id="km" type="number" name="km" required>
-				<label for="km">Anzahl km</label>
+                <input id="von" type="text" name="von" required placeholder="von">
+                <input id="bis" type="text" name="bis" required placeholder="bis">
 				<input class="btn" type="submit" value="Abschicken">
 
 			</form>

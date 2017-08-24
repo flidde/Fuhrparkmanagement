@@ -15,7 +15,7 @@
 require_once "fragments/navbar.html";
 ?>
 	<div class="container">
-		<h2>Hausarbeitsseminar</h2>
+		<h3>Hausarbeitsseminar</h3>
 		<h5>Willkommen auf der Fuhrparkmanagement Software</h5>
 		<p>Diese Software soll die Ökologische bla bla</p>
 	</div>
