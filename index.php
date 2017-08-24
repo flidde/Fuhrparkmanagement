@@ -15,8 +15,8 @@
 require_once "fragments/navbar.html";
 ?>
 	<div class="container">
-		<h1>Hausarbeitsseminar</h1>
-		<h3>Willkommen auf der Fuhrparkmanagement Software</h3>
+		<h2>Hausarbeitsseminar</h2>
+		<h5>Willkommen auf der Fuhrparkmanagement Software</h5>
 		<p>Diese Software soll die Ökologische bla bla</p>
 	</div>
 <?php

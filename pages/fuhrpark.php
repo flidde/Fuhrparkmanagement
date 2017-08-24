@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Geeignete Autos</title>
+    <title>Autosammlung</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,11 +15,12 @@
 require_once "../fragments/navbar.html";
 ?>
 <div class="container">
-    <h4>Folgende Autos eignen sich:</h4>
+    <h4>Alle Autos des Fuhrparks:</h4>
     <br/>
 
     <?php
-    include "../controller.php";
+    include "../Api.php";
+    $cars = (new Api)->getAllCars();
     foreach ($cars as $car) {
         $view = "<div class='row'>
 						<div class='col s12 m7'>
@@ -35,12 +36,9 @@ require_once "../fragments/navbar.html";
 								</div>
 							</div>
 						</div>";
-        $view = str_replace("var_img", $car->img, $view);//TODO: str_replace (array, array) benutzen!;
-        $view = str_replace("var_name", $car->name, $view);
-        $view = str_replace("var_type", $car->type, $view);
-        $view = str_replace("var_info", $car->info, $view);
+		$view = str_replace(["var_img", "var_name", "var_type", "var_info"], [$car->img, $car->name, $car->type, $car->info], $view);
 
-        echo $view;
+		echo $view;
         echo "<br/>";
     }
     ?>

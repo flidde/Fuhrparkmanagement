@@ -19,8 +19,9 @@
 		<br/>
 
 		<?php
-		include "controller.php";
-		$cars = getCars($_GET["km"]);
+		include "Api.php";
+		$cars = (new Api)->getCars($_GET["km"]);
+		//$cars = getCars($_GET["km"]);
 		if ($cars === -1) {
 			echo "ERROR: negative Zahl eingegeben";//läuft noch nicht
 		} elseif ($cars === -2) {
@@ -43,10 +44,7 @@
 								</div>
 							</div>
 						</div>";
-			$view = str_replace("var_img", $car->img, $view);//TODO: str_replace (array, array) benutzen!;
-			$view = str_replace("var_name", $car->name, $view);
-			$view = str_replace("var_type", $car->type, $view);
-			$view = str_replace("var_info", $car->info, $view);
+			$view = str_replace(["var_img", "var_name", "var_type", "var_info"], [$car->img, $car->name, $car->type, $car->info], $view);
 
 			echo $view;
 			echo "<br/>";
