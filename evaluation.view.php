@@ -33,7 +33,7 @@
                     $text = $element->distance->value;
                 }
             }
-            echo "<p>".$text . "</p>\n";
+            echo "<p>Hin und zurück:".$text *2 . "</p>\n";
             $cars = (new Api)->getCars($min);
             //$cars = getCars($_GET["km"]);
             if ($cars === -1) {
