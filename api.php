@@ -4,7 +4,7 @@ class Api {
 	var $link = null;
 
 	function __construct() {
-		$this->link = new mysqli("sql11.freemysqlhosting.net", "sql1193231", "BlzvSwDgRf", "sql1193231");
+		$this->link = new mysqli("sql11.freemysqlhosting.net", "sql11193231", "BlzvSwDgRf", "sql11193231");
 		if (!$this->link) die("Es konnte keine Verbindung zum Server hergestellt werden");
 		$this->link->set_charset("utf-8");
 	}
