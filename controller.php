@@ -14,7 +14,7 @@ if (isset($_GET["km"])) {
 }
 
 function getCars($km) {
-    $conn = new mysqli("sql11.freemysqlhosting.net", "sql11191223", "jqDu9jxQkC", "sql11191223");
+    $conn = new mysqli("sql11.freemysqlhosting.net", "sql1193231", "BlzvSwDgRf", "sql1193231");
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
