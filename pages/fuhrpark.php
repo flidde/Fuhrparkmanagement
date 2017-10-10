@@ -6,14 +6,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <?php
-    require_once "../fragments/head.html";
-    ?>
+    <?php include "../fragments/head.html"; ?>
 </head>
 <body>
-<?php
-require_once "../fragments/navbar.html";
-?>
+<?php include"../fragments/navbar.html"; ?>
+//Anzeige der Fuhrpark Darstellung, es wird Quasi die Datenbank einfach in Optischer FOrma ausgegeben
 <div class="container">
     <h4>Alle Autos des Fuhrparks:</h4>
     <br/>

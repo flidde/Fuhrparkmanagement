@@ -35,9 +35,7 @@
 	?>
 </head>
 <body>
-<?php
-require_once "../fragments/navbar.html";
-?>
+<?php include "../fragments/navbar.html"; ?>
 <div id="floating-panel">
     <b>Start: </b>
     <select id="start">
@@ -71,6 +69,8 @@ require_once "../fragments/navbar.html";
     </select>
 </div>
 <div id="map"></div>
+
+//Google Map API Berechnet die Strecken und Fahrtdauer unserer Anwendung liefert uns die Nötigen variablen
 <script>
     function initMap() {
         var directionsService = new google.maps.DirectionsService;
@@ -102,7 +102,7 @@ require_once "../fragments/navbar.html";
         });
     }
 </script>
-
+//Eindeutiger API Key von Google
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7Q__xI5jszbxzn_nR5uqtHk0mfzc3DuU&callback=initMap">
 </script>
@@ -111,5 +111,5 @@ require_once "../fragments/footer.html";
 ?>
 </body>
 </html>
-
+//Eindeutiger API Key von Google
 AIzaSyB7Q__xI5jszbxzn_nR5uqtHk0mfzc3DuU
