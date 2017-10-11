@@ -1,12 +1,12 @@
 <?php
-//Fügt das Modell Car hinzu
+/**Fügt das Modell Car hinzu */
 require_once "Car.php";
-//FÜgt das Modell Optimal hinzu
+/**FÜgt das Modell Optimal hinzu*/
 include "Optimal.php";
 
 class Api {
 	var $link = null;
-// Datenverbindung
+/** Datenverbindung */
 	function __construct() {
 		$this->link = new mysqli("sql11.freemysqlhosting.net", "sql11193231", "BlzvSwDgRf", "sql11193231");
 		if (!$this->link) die("Es konnte keine Verbindung zum Server hergestellt werden");

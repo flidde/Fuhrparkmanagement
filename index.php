@@ -6,21 +6,15 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<?php
-	require_once "fragments/head.html";
-	?>
+	<?php include "fragments/head.html"; ?>
 </head>
 <body>
-<?php
-require_once "fragments/navbar.html";
-?>
+<?php include "fragments/navbar.html"; ?>
 	<div class="container">
 		<h3>Hausarbeitsseminar</h3>
 		<h5>Willkommen auf der Fuhrparkmanagement Software</h5>
 		<p>Diese Software soll die Ökologische bla bla</p>
 	</div>
-<?php
-require_once "fragments/footer.html";
-?>
+<?php include "fragments/footer.html"; ?>
 </body>
 </html>

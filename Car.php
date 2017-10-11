@@ -1,4 +1,3 @@
-//Ein Modell
 <?php
 
 

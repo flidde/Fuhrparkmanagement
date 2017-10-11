@@ -15,7 +15,7 @@ $.get({
         if (!getParameterByName("wayback")) {
             $("#backHint").css("display", "none");
         }
-       // Anzeige der KM Anzahl muss durch 1000 geteilt werden, da es Standard mäßig in Meter Ausgegeben wird
+       //Anzeige der KM Anzahl muss durch 1000 geteilt werden, da es Standard mäßig in Meter Ausgegeben wird
         $("#km").html(json.gesamt / 1000);
         //hier wir eine Rundung der Duration Zeit durchgeführt und eine Umrechnung in Stunden und Minuten
         var h = Math.round((json.gesamtDur) / 60 / 60 * 10) / 10;

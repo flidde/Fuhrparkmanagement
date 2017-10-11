@@ -7,7 +7,7 @@
  * Time: 18:03
  */
 
-// Ein weiteres Modell
+/** Ein weiteres Modell*/
 class Optimal
 {
     var $von;

@@ -11,7 +11,7 @@
 </head>
 <body>
 <?php include "../fragments/navbar.html"; ?>
-    //Input Klasse greift auf die View.php zurück und Übermittelt die Eingaben
+    <!-- Input Klasse greift auf die View.php zurück und Übermittelt die Eingaben -->
 	<div class="container">
 		<h2>Fuhrparkmanagement</h2>
 		<p>Bitte geben Sie den Abfahrtsort und den Zielort Ihrer Reise ein.</p>

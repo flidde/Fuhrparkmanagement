@@ -70,7 +70,7 @@
 </div>
 <div id="map"></div>
 
-//Google Map API Berechnet die Strecken und Fahrtdauer unserer Anwendung liefert uns die Nötigen variablen
+<!-- Google Map API Berechnet die Strecken und Fahrtdauer unserer Anwendung liefert uns die Nötigen variablen-->
 <script>
     function initMap() {
         var directionsService = new google.maps.DirectionsService;
@@ -102,7 +102,7 @@
         });
     }
 </script>
-//Eindeutiger API Key von Google
+<!-- Eindeutiger API Key von Google -->
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7Q__xI5jszbxzn_nR5uqtHk0mfzc3DuU&callback=initMap">
 </script>
